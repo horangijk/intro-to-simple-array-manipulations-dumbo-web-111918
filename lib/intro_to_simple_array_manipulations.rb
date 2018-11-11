@@ -7,8 +7,12 @@ end
 def using_pop(array)
   array.pop 
 end 
-def pop_with_args(array, arg = 2)
-  arg.times {array.pop}
+def pop_with_args(array, arg)
+  new_array = []
+  arg.times do 
+    new_array << array.pop
+    new_array
+  end 
 end 
 def using_shift(array)
   array.shift 
